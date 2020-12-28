@@ -34,6 +34,11 @@ control.onEvent(EventBusSource.MES_DPAD_CONTROLLER_ID, EventBusValue.MICROBIT_EV
             robotbit.MotorRun(robotbit.Motors.M1B, -220)
             robotbit.MotorRun(robotbit.Motors.M2A, 220)
             robotbit.MotorRun(robotbit.Motors.M2B, -220)
+        } else if (control.eventValue() == 9) {
+            robotbit.MotorRun(robotbit.Motors.M1A, 120)
+            robotbit.MotorRun(robotbit.Motors.M1B, -120)
+            robotbit.MotorRun(robotbit.Motors.M2A, -255)
+            robotbit.MotorRun(robotbit.Motors.M2B, 255)
         } else {
             motor.motorStopAll()
             basic.clearScreen()
