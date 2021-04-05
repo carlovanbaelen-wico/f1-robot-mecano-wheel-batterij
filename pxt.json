@@ -1,5 +1,6 @@
 {
     "name": "F1 robot Mecano wheel Batterij",
+    "version": "0.0.1",
     "description": "",
     "dependencies": {
         "core": "*",
